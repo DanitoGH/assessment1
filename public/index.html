@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <mete name="viewport" content="width=device-width, intial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css" />     
+  <link rel="stylesheet" href="./css/style.css" />     
   <title>Account</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="navbar">
       <div class="container flex">
         <div class="logo-wrapper flex">
-          <img src="../images/logo-bubble.png" alt="Logo" />
+          <img src="./images/logo-bubble.png" alt="Logo" />
           <h1 class="logo-title">Account</h1>
         </div>
         <div class="close-icon">
@@ -78,33 +78,5 @@
          <Button class="btn">Sign Out</Button>
       </div>
     </section>
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-         firebase.analytics(); // call to activate
-         firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'analytics', 
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-        } catch (e) {
-          console.error(e);
-        }
-      });
-    </script>
 </body>
 </html>
