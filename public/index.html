@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <mete name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />     
+  <title>Account</title>
+</head>
+<body>
+    <!-- Navbar  -->
+    <div class="navbar">
+      <div class="container flex">
+        <div class="logo-wrapper flex">
+          <img src="../images/logo-bubble.png" alt="Logo" />
+          <h1 class="logo-title">Account</h1>
+        </div>
+        <div class="close-icon">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+    </div>
+    <!-- User Info -->
+    <section class="user-info">
+       <div class="container flex">
+          <div class="user-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <h1 class="user-first-name">Hi,Serwaa</h1>
+          <p class="user-total-earnings">Earned GH<span class="cedi-symbol">&#x20B5;</span> 5.897 since joining</p>
+       </div>
+    </section>
+    <!-- Current Eearnings -->
+    <section class="user-current-earnings">
+      <div class="container flex">
+          <h1 class="current-earnings-label">Your current earnings</h1>
+          <p class="current-earnings">GH<span class="cedi-symbol">&#x20B5;</span> 5.897</p>
+          <p class="current-points">(5,897 Points)</p>
+      </div>
+    </section>
+    <!-- Earnings Progress -->
+    <section class="earnings-progress">
+      <div class="container flex">
+          <p class="payment-threshold-label">You can cash out if your total is atleast GHc10</p>
+          <progress max="100" value="59"></progress>
+          <p class="payment-threshold">You've reached 58.9% of your payment threshold</p>
+      </div>
+    </section>
+    <!-- First Hr -->
+    <section class="first-hr">
+      <div  class="container flex">
+         <hr/>
+      </div>
+    </section>
+    <!-- Friends Invitation -->
+   <section class="friends-invitation">
+      <div class="container flex">
+        <h1 class="friends-invitation-label">Invite your friends to earn more</h1>
+        <p class="invitation-code">INVITE CODE: <span>S51823</span></p>
+        <div class="social-media-links">
+          <ul>
+            <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="email"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+    </div>
+   </section>
+    <!-- Second Hr -->
+    <section class="second-hr">
+      <div class="container flex">
+         <hr/>
+      </div>
+    </section>
+    <!-- Sign Out Btn -->
+    <section class="sign-out-btn">
+      <div class="container flex">
+         <Button class="btn">Sign Out</Button>
+      </div>
+    </section>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+         firebase.analytics(); // call to activate
+         firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'analytics', 
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    </script>
+</body>
+</html>

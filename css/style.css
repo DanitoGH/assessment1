@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+   font-weight: 500;
+   line-height: 1.2;
+   margin: 5px 0;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border: none;
+    height: 1.8px;
+    background: #dddddd;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    color: #000000;
+    height: 60px;
+}
+
+.navbar ul {
+   display: flex;
+}
+
+.navbar .logo-wrapper {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .logo-wrapper h1 {
+    font-size: 25px;
+    color: #b2b2b2;
+}
+
+.navbar .logo-wrapper img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.navbar .close-icon {
+    font-size: 26px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* User Info */
+.user-info {
+    margin-top: 5px;
+}
+
+.user-info .flex,
+.user-current-earnings .flex ,
+.earnings-progress .flex,
+.friends-invitation .flex {
+    flex-direction: column;
+}
+
+.user-info .user-icon {
+   width: 50px;
+   height: 50px;
+   font-size: 26px;
+   color: #fff;
+   display: block;
+   text-align: center;
+   background: #ffaa00;
+   border-radius: 100%;
+   margin: 0p 5px;
+}
+
+.user-info .user-icon i {
+    line-height: 53px;
+ }
+
+.user-info .user-total-earnings {
+    font-size: 12px;
+    color: #b2b2b2;
+    font-weight: 500;
+}
+
+.user-info .cedi-symbol {
+    font-size: 10px;
+ }
+
+/* Current Eearnings */
+.user-current-earnings {
+    margin-top: 45px;
+}
+
+.user-current-earnings .current-earnings-label {
+    font-size: 23px;
+}
+
+.user-current-earnings .current-earnings {
+    font-size: 30px;
+    color: #00D068;
+}
+
+.user-current-earnings .cedi-symbol {
+    font-size: 26px;
+ }
+
+.user-current-earnings .current-points {
+    font-size: 13px;
+    color: #4670FF;
+    font-weight: 500;
+}
+
+/* Earnings Progress */
+.earnings-progress {
+    margin-top: 12px;
+}
+
+.earnings-progress .payment-threshold-label {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.earnings-progress progress{
+    margin-top: 11px;
+    -webkit-appearance: none;
+    width: 300px;
+    height: 17px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+ }
+
+ progress::-webkit-progress-value {
+    background-color: #00D068;
+}
+
+ progress::-moz-progress-bar {
+    background-color: #00D068;
+ }
+
+.earnings-progress .payment-threshold {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: 500;
+}
+
+/* First Hr*/
+.first-hr hr {
+   margin-top: 25px;
+   width: 70px;
+}
+
+/* Friends Invitation */
+.friends-invitation .friends-invitation-label {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.friends-invitation .invitation-code {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: 500;
+}
+
+.friends-invitation .invitation-code span {
+    color: #ffaa00;
+    font-weight: 500;
+}
+
+.friends-invitation .social-media-links {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.friends-invitation .social-media-links ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.friends-invitation .social-media-links ul li {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 12px 10px;
+}
+
+.friends-invitation .social-media-links ul li a { 
+   display: block;
+   color: #fff;
+   font-size: 19px;
+}
+
+.friends-invitation .social-media-links ul li a i {
+  line-height: 34px;
+ }
+
+ .friends-invitation .social-media-links ul li:nth-child(1) {
+    background: #0051eb; 
+ }
+
+ .friends-invitation .social-media-links ul li:nth-child(2) {
+    background: #00BAFF;
+}
+
+.friends-invitation .social-media-links ul li:nth-child(3) {
+    background: #6C00ff;
+}
+
+/* Second Hr*/
+.second-hr hr {
+    margin-top: 0px;
+    width: 40px;
+ }
+
+ /* Sign Out Btn */
+ .sign-out-btn .btn {
+     width: 250px;
+     margin-top: 25px;
+     display: inline-block;
+     padding: 15px 40px;
+     cursor: pointer;
+     background:#d95858;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     font-size: 15px;
+     font-weight: 600;
+ }
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Tablets and under*/
+@media (max-width: 768px){
+    .container {
+       padding: 0px 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px){
+    .container {
+      padding: 0px 15px;
+    }
+    .earnings-progress progress{
+        width: 250px;
+    }
+}
+
+
+
+
+
